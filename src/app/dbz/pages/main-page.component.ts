@@ -19,4 +19,10 @@ export class MainPageComponent {
   }
   ];
 
+  onNewCharacter(character: Character): void{
+    console.log('MainPAge');
+    console.log(character)
+
+  }
+
 }

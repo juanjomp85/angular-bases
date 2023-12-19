@@ -2,11 +2,11 @@
 <hr>
 <div class0="row">
   <div class="col">
-    <app-dbz-list [characterList]="charcarters"></app-dbz-list>
+    <app-dbz-list [characterList]="charcarters"></app-dbz-list> <!--[] -> emite -->
   </div>
 
   <div class="col">
-    <app-dbz-add-character></app-dbz-add-character>
+    <app-dbz-add-character (onNewCharacter)="onNewCharacter($event)"></app-dbz-add-character> <!--() -> recibe -->
 
   </div>
 
